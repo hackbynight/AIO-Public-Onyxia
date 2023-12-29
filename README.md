@@ -1,4 +1,4 @@
-### AIO-WOTLK
+### AIO-Onyxia
 
 ## Setting up the project
 
