@@ -24,7 +24,6 @@ namespace AIO.Combat.Warlock
         public List<RotationStep> Rotation => new List<RotationStep> 
         {
             new RotationStep(new RotationAction("Consumables Management", ConsumablesManagement), 0f, 5000),
-            new RotationStep(new RotationBuff("Unending Breath"), 1f, (s,t) => !Me.IsMounted, RotationCombatUtil.FindPartyMember),
             new RotationStep(new RotationBuff("Unending Breath"), 2f, (s,t) => !Me.IsMounted, RotationCombatUtil.FindMe),
             new RotationStep(new RotationBuff("Fel Armor"), 3f, (s, t) => !Me.IsMounted, RotationCombatUtil.FindMe, Exclusive.WarlockSkin),
             new RotationStep(new RotationBuff("Demon Armor"), 4f, (s, t) => !Me.IsMounted, RotationCombatUtil.FindMe, Exclusive.WarlockSkin),
